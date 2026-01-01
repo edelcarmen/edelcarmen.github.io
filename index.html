@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Site Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IGS Corporate Housing | Premium Furnished Housing Solutions</title>
+  <meta name="description" content="IGS Corporate Housing provides premium, fully furnished housing solutions for corporations, professionals, and extended stays." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: #111;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-white text-slate-800">
 
-<header>
-  <h1>Your Business or Name</h1>
-  <p>Short tagline or description</p>
-</header>
+  <!-- Header -->
+  <header class="w-full border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="/IGS Corporate Housing logo design.png" alt="IGS Corporate Housing Logo" class="h-12" />
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#solutions" class="hover:text-blue-700">Solutions</a>
+        <a href="#why" class="hover:text-blue-700">Why IGS</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+      </nav>
+      <a href="#contact" class="bg-blue-700 text-white px-5 py-2 rounded-xl text-sm font-semibold hover:bg-blue-800 transition">Get Housing</a>
+    </div>
+  </header>
 
-<section>
-  <h2>About</h2>
-  <p>
-    Write a short paragraph about what you do or what this site is for.
-  </p>
-</section>
+  <!-- Hero Section -->
+  <section class="bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          Premium Corporate Housing,<br class="hidden md:block" /> Simplified
+        </h1>
+        <p class="text-lg text-slate-600 mb-8">
+          Fully furnished, move‑in‑ready homes for business travelers, relocating professionals, and corporate teams — wherever work takes you.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-blue-700 text-white px-7 py-3 rounded-xl font-semibold hover:bg-blue-800 transition">Request a Quote</a>
+          <a href="#solutions" class="border border-slate-300 px-7 py-3 rounded-xl font-semibold hover:bg-white transition">Explore Solutions</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-4 bg-gradient-to-br from-blue-100 to-green-100 rounded-3xl"></div>
+        <img src="https://images.unsplash.com/photo-1502673530728-f79b4cab31b1" alt="Luxury Corporate Housing" class="relative rounded-3xl shadow-xl" />
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>
-    Email: you@example.com
-  </p>
-</section>
+  <!-- Solutions -->
+  <section id="solutions" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Corporate Housing Solutions</h2>
+      <p class="text-slate-600 mb-12 max-w-2xl">
+        Designed to support modern workforce mobility with comfort, flexibility, and reliability.
+      </p>
 
-<footer>
-  © 2026 Your Name
-</footer>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+          <h3 class="font-semibold text-xl mb-3">Business Travel</h3>
+          <p class="text-slate-600">Short‑ and mid‑term stays for executives, consultants, and project teams.</p>
+        </div>
+        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+          <h3 class="font-semibold text-xl mb-3">Relocation Housing</h3>
+          <p class="text-slate-600">Comfortable housing for employees transitioning to new cities.</p>
+        </div>
+        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+          <h3 class="font-semibold text-xl mb-3">Insurance & Extended Stay</h3>
+          <p class="text-slate-600">Reliable furnished housing for temporary displacement and long‑term needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why IGS -->
+  <section id="why" class="bg-slate-50 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Why IGS Corporate Housing</h2>
+        <ul class="space-y-4 text-slate-700">
+          <li>✔ Fully furnished, turnkey residences</li>
+          <li>✔ Flexible lease terms</li>
+          <li>✔ Prime locations nationwide</li>
+          <li>✔ Dedicated client support</li>
+          <li>✔ Corporate‑grade service standards</li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <p class="text-3xl font-bold text-blue-700">24/7</p>
+          <p class="text-sm text-slate-600">Client Support</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <p class="text-3xl font-bold text-green-600">100%</p>
+          <p class="text-sm text-slate-600">Move‑In Ready</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <p class="text-3xl font-bold text-blue-700">Flexible</p>
+          <p class="text-sm text-slate-600">Lease Terms</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <p class="text-3xl font-bold text-green-600">Nationwide</p>
+          <p class="text-sm text-slate-600">Coverage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Let’s Find the Right Housing Solution</h2>
+      <p class="text-slate-600 mb-10">Tell us about your needs and our team will respond promptly.</p>
+
+      <form class="grid gap-6 text-left">
+        <input type="text" placeholder="Full Name" class="border p-3 rounded-xl" />
+        <input type="email" placeholder="Email Address" class="border p-3 rounded-xl" />
+        <input type="text" placeholder="Company" class="border p-3 rounded-xl" />
+        <textarea placeholder="Tell us about your housing needs" rows="4" class="border p-3 rounded-xl"></textarea>
+        <button class="bg-blue-700 text-white py-3 rounded-xl font-semibold hover:bg-blue-800 transition">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-600">
+      <p>© 2026 IGS Corporate Housing. All rights reserved.</p>
+      <p>Premium Corporate & Furnished Housing Solutions</p>
+    </div>
+  </footer>
 
 </body>
 </html>
